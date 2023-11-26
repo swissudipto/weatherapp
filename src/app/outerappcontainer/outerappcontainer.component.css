@@ -1,0 +1,11 @@
+#outerbox{
+    height: 85%;
+    width: 85%;
+    background-color: aqua;
+    border-radius: 25px;
+    margin-left: 8%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

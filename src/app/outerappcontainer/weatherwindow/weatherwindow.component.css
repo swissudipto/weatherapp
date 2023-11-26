@@ -1,0 +1,25 @@
+#innerbox{
+    height: 90%;
+    width: 30%;
+}
+
+#upper{
+    display: flex;
+    height: 50%;
+    width: 100%;    
+    border-radius: 25px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lower{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border-radius: 25px;   
+    background-color: beige;
+    Justify-content: center;
+    align-items: center;
+}
