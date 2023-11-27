@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-upper',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./upper.component.css']
 })
 export class UpperComponent {
+
+  @Input() currentCondition!:string;
+  @Input() currentConditionIcon!:string;
+  @Input() wind_dir!:string;
+  @Input() humidity!:number;
 
 }

@@ -1,4 +1,16 @@
 <div id="innerbox">
-    <app-upper id="upper"></app-upper>
-    <app-lower id="lower"></app-lower>
+  <app-upper
+    id="upper"
+    [currentCondition]="currentCondition"
+    [currentConditionIcon]="iconSrc"
+    [humidity]="humidity"
+    [wind_dir]="windDirection" 
+  ></app-upper>
+  <app-lower
+    id="lower"
+    [currentTemp]="currentTempurature"
+    [location]="location"
+    [localtime]="localtime"
+    [timeZone]="timeZone"
+  ></app-lower>
 </div>

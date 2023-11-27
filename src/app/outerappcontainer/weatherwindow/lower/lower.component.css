@@ -1,3 +1,17 @@
+#timesec{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-family: Papyrus;
+}
+
+#timezonesec{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font-family: Papyrus;
+}
+
 #tempwindow{
-    display: flex;
+    font-family: Papyrus;
 }

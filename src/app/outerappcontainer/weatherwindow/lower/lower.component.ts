@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { WeatherapiService } from 'src/app/weatherapi.service';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lower',
@@ -7,23 +6,10 @@ import { WeatherapiService } from 'src/app/weatherapi.service';
   styleUrls: ['./lower.component.css'],
 })
 export class LowerComponent {
-  currentTempurature!:Number;
-  location!:String;
 
-  constructor(private weatherapi: WeatherapiService) {
-    this.gettemperature();
-  }
+  @Input() currentTemp!:number;
+  @Input() location!:string;
+  @Input() timeZone!:string;
+  @Input() localtime!:string;
 
-  gettemperature() {
-    this.weatherapi.getweatherdata('kolkata').subscribe({
-      next: (response) => {
-        console.warn(response);
-        this.currentTempurature = response.current.temp_c;
-        this.location = response.location.name;
-      },
-      error: (response) => {
-        console.error(response);
-      },
-    });
-  }
 }

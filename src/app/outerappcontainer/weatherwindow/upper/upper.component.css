@@ -1,0 +1,29 @@
+#uppercontainer{
+    height: 50%;
+    width: 30%;
+}
+
+#conditionIcon{
+    height: 70%;
+    width: 90%;
+}
+#condition{
+    margin-left: 30%;
+    font-family: Papyrus;
+    color: dimgrey;
+}
+
+#winddirsec{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-family: Papyrus;
+
+}
+
+#Humiditysec{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-family: Papyrus;
+}
